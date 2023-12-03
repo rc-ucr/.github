@@ -16,8 +16,8 @@ The latest official release of **ROCKS**<sup>:tm:</sup> 7.0 *Manzanita* (based C
 
 The latest unoffical community release **7.2.0-UCR** *Coffeeberry* (based on CentOS 7.9.2009, including all CentOS updates as of Dec 1, 2023) is available at:
 
-- ISO-images: http://rc-ucr.org/7-2-0-UCR/isos/x86_64/
-- Central server: http://rc-ucr.org/7-2-0-UCR/install/rolls
+- ISO-images: http://rc-ucr.org/isos/7.2.0/x86_64/
+- Central server: http://rc-ucr.org/install/rolls/
 - Linux kernel version: `3.10.0-1160.102.1.el7.x86_64`
 
 Official version 7.0 installation instructions (http://www.rocksclusters.org/docs/guides.html) are still applicable for RC-UCR. The following rolls are currently available:
