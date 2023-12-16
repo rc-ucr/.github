@@ -2,7 +2,7 @@
 
 **R**ocks**c**lusters - **U**nofficial **C**ommunity **R**elease is a non-profit, non-commercial, open-source, and community-based attempt to reactivate the ROCKS<sup>:tm:</sup> open-source Linux cluster distribution project, which has been dormant since 2017.
 
-ROCKS<sup>:tm:</sup> continues to be important to the scientific community as well as to business users. The lack of further development since 2017 has been widely discussed and lamented in the support mailing lists. Likewise, the coming end of the CentOS 7 Linux distribution has raised fundamental questions about how Rocks can be further developed. Support for CentOS 7 ends on June 30, 2024. At the same time, Rocky Linux has established itself as a replacement for CentOS. This creates an opportunity to find ways to at least port the existing Rocks software base to Rocky Linux.
+ROCKS<sup>:tm:</sup> continues to be important to the scientific community as well as to corporate users. The lack of further development since 2017 has been widely discussed and lamented in the support mailing list. Likewise, the coming end of the CentOS 7 Linux distribution has raised fundamental questions about how Rocks can be further developed. Support for CentOS 7 ends on June 30, 2024. At the same time, Rocky Linux has established itself as a replacement for CentOS. This creates an opportunity to find ways to at least port the existing Rocks software base to Rocky Linux.
 
 As a first step, RC-UCR is attempting to port the existing Rocks code for CentOS 7.9.2009, to document a simplified build process and to make the resulting first distribution 7.2.0-UCR available to the general public.
 
@@ -14,35 +14,37 @@ The latest official release of **ROCKS**<sup>:tm:</sup> 7.0 *Manzanita* (based C
 
 ## Latest Unoffical Community Release 7.2.0-UCR
 
-The latest unofficial community release **7.2.0-UCR** *Coffeeberry* (based on CentOS 7.9.2009, including all CentOS updates as of Dec 15, 2023) is available at:
+The latest unofficial community release **7.2.0-UCR** *Coffeeberry* (entirely based on **CentOS 7.9.2009** and including all CentOS updates as of Dec 15, 2023) is available at:
 
-- Central server: http://rc-ucr.org/7-2-0-UCR/install/rolls/
-- ISO-images: http://rc-ucr.org/7-2-0-UCR/isos/x86_64/
+- Roll server: http://rc-ucr.org/7-2-0-UCR/install/rolls/
+- ISO-images: https://rc-ucr.org/7-2-0-UCR/isos/x86_64/
 - Linux kernel version: `3.10.0-1160.105.1.el7.x86_64 `
 
-Official version 7.0 installation instructions (http://www.rocksclusters.org/docs/guides.html) are still applicable for RC-UCR. The following rolls are currently available via Internet on central server:
+Official ROCKS<sup>:tm:</sup> version 7.0 installation instructions (http://central-7-0-x86-64.rocksclusters.org/roll-documentation/base/7.0/install-frontend-7.html) are still applicable for RC-UCR. The bootable kernel roll ISO-image for network installation can be downloaded from https://rc-ucr.org/7-2-0-UCR/isos/x86_64/kernel-7.2.0-UCR.x86_64.disk1.iso. The following rolls are currently available via Internet on roll server:
 
-- Required for installation: `base`, `core`, `kernel`, `CentOS`, `Updates-CentOS-7.9.2009`
-- Optional: `ganglia`, `sge`
+- Required rolls: `base`, `core`, `kernel`, `CentOS`, `Updates-CentOS-7.9.2009`
+- Optional rolls: `ganglia`, `sge`
 
 ## Development
 
 RC-UCR follows the same repository layout as the original software. Each roll is developed in its own repository, forked from the original repository. There are some helper repositories as well as a master repository which is used for building the complete distribution.
 
-- `build`: https://github.com/rc-ucr/build
-- `rocks`: https://github.com/rc-ucr/rocks
-- `rocksbuild`: https://github.com/rc-ucr/rocksbuild
-- `core`: https://github.com/rc-ucr/core
-- `base`: https://github.com/rc-ucr/base
-- `kernel`: https://github.com/rc-ucr/kernel
-- `ganglia`: https://github.com/rc-ucr/ganglia
-- `sge`: https://github.com/rc-ucr/sge
+| Repository   | Link                                 | Comments                                             |
+| ------------ | ------------------------------------ | ---------------------------------------------------- |
+| `build`      | https://github.com/rc-ucr/build      | Build and setup notes, also hosts RC-UCR discussions |
+| `rocks`      | https://github.com/rc-ucr/rocks      | The master building repsitory                        |
+| `rocksbuild` | https://github.com/rc-ucr/rocksbuild | Helper repository, only used during builds           |
+| `core`       | https://github.com/rc-ucr/core       | Core roll                                            |
+| `base`       | https://github.com/rc-ucr/base       | Base roll                                            |
+| `kernel`     | https://github.com/rc-ucr/kernel     | Kernel roll                                          |
+| `ganglia`    | https://github.com/rc-ucr/ganglia    | Ganglia roll                                         |
+| `sge`        | https://github.com/rc-ucr/sge        | SGE roll                                             |
 
-There are no specific `CentOS` or `Update-CentOS` repositories, as these rolls are created together with `base` roll during build. Detailed buidling instructions are given in https://github.com/rc-ucr/build.
+There are no specific `CentOS` or `Update-CentOS` repositories, as these rolls are created together with `base` roll during build. Detailed building instructions are given in https://github.com/rc-ucr/build.
 
-## Rocks Copyright
+## ROCKS Copyright
 
-The Rocks Logo, the name ROCKS<sup>:tm:</sup>, and the name CentOS<sup>:tm:</sup> are registered trademarks with the United States Patent and Trademark Office and possibly other trademark offices.
+The Rocks Logo, the name ROCKS<sup>:tm:</sup>, and the name CentOS<sup>:tm:</sup> are registered trademarks with the United States Patent and Trademark Office and other patent and trademark offices.
 
 ```txt
 Rocks(r)
