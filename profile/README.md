@@ -12,7 +12,7 @@ Contact: `info (at) rc-ucr.org `
 
 The latest official release of **ROCKS**<sup>:tm:</sup> 7.0 *Manzanita* (based CentOS 7.4) is available at http://www.rocksclusters.org/new/2017/2017/12/01/rocks-7-0-released.html and was released on Dec 1, 2017.
 
-## Latest Unoffical Community Release 7.2.0-UCR
+## Latest Unofficial Community Release 7.2.0-UCR
 
 The latest unofficial community release **7.2.0-UCR** *Coffeeberry* (entirely based on **CentOS 7.9.2009** and including all CentOS updates as of Dec 15, 2023) is available at:
 
